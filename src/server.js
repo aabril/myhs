@@ -25,6 +25,7 @@ const upload = multer({ dest: path.join(__dirname, 'uploads') });
 /**
  * Load environment variables from .env file, where API keys and passwords are configured.
  */
+
 // dotenv.config({ path: '.env.beta.albertabril.com' });
 dotenv.config({ path: '.env.example' });
 
@@ -39,7 +40,7 @@ const contactController = require('./controllers/contact');
 /**
  * API keys and Passport configuration.
  */
-const passportConfig = require('./config/passport');
+const passportConfig = require('./passport/config');
 
 /**
  * Create Express server.
