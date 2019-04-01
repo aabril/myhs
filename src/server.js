@@ -25,6 +25,19 @@ const upload = multer({ dest: path.join(__dirname, 'uploads') });
 /**
  * Load environment variables from .env file, where API keys and passwords are configured.
  */
+const isProd = (process.env.NODE_ENV==="PROD")
+const isBeta = (process.env.NODE_ENV==="PROD")
+
+if(isProd){
+  dotenv.config({ path: 'config/beta.albertabril.com.env' });
+}else if(isBeta){
+  dotenv.config({ path: 'config/default.env' });
+}else{
+  dotenv.config({ path: 'config/default.env' });
+}
+
+
+
 
 // dotenv.config({ path: '.env.beta.albertabril.com' });
 dotenv.config({ path: '.env.example' });
