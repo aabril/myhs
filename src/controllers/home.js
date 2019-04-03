@@ -3,7 +3,7 @@
  * Home page.
  */
 exports.index = (req, res) => {
-  res.render('newtheme/home', {
+  res.render('original/home', {
     title: 'Home'
   });
 };
