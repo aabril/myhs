@@ -26,7 +26,7 @@ const upload = multer({ dest: path.join(__dirname, 'uploads') });
  * Load environment variables from .env file, where API keys and passwords are configured.
  */
 const isProd = (process.env.NODE_ENV==="PROD")
-const isBeta = (process.env.NODE_ENV==="PROD")
+const isBeta = (process.env.NODE_ENV==="BETA")
 
 if(isProd){
   dotenv.config({ path: 'config/beta.albertabril.com.env' });
@@ -35,12 +35,6 @@ if(isProd){
 }else{
   dotenv.config({ path: 'config/default.env' });
 }
-
-
-
-
-// dotenv.config({ path: '.env.beta.albertabril.com' });
-dotenv.config({ path: '.env.example' });
 
 /**
  * Controllers (route handlers).
@@ -258,13 +252,5 @@ if (process.env.NODE_ENV === 'development') {
     res.status(500).send('Server Error');
   });
 }
-
-// /**
-//  * Start Express server.
-//  */
-// app.listen(app.get('port'), () => {
-//   console.log('%s App is running at http://localhost:%d in %s mode', chalk.green('✓'), app.get('port'), app.get('env'));
-//   console.log('  Press CTRL-C to stop\n');
-// });
 
 module.exports = app;
