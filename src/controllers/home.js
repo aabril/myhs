@@ -3,7 +3,7 @@
  * Home page.
  */
 exports.index = (req, res) => {
-  res.render('original/home', {
+  res.render('kelkenny/home', {
     title: 'Home'
   });
 };
