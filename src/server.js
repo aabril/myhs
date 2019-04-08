@@ -39,10 +39,10 @@ if(isProd){
 /**
  * Controllers (route handlers).
  */
-const homeController = require('./controllers/home');
-const userController = require('./controllers/user');
-const apiController = require('./controllers/api');
-const contactController = require('./controllers/contact');
+const homeController = require('./controllers/home.controller');
+const userController = require('./controllers/user.controller');
+const apiController = require('./controllers/api.controller');
+const contactController = require('./controllers/contact.controller');
 
 /**
  * API keys and Passport configuration.
