@@ -10,10 +10,10 @@ function homeController(req, res) {
     'newtheme': 'newtheme/home'
   }
   const themePath = themePaths[theme]
-
-  res.render(themePath, {
+  const dataObject = {
     title: 'Home'
-  });
+  }
+  res.render(themePath, dataObject)
 };
 
 module.exports = {
