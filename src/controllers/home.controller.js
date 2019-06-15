@@ -2,8 +2,20 @@
  * GET /
  * Home page.
  */
-exports.index = (req, res) => {
-  res.render('original/home', {
+function homeController(req, res) {
+  const theme = 'original'
+  const themePaths = {
+    'original': 'original/home',
+    'kelkenny': 'kelkenny/home',
+    'newtheme': 'newtheme/home'
+  }
+  const themePath = themePaths[theme]
+
+  res.render(themePath, {
     title: 'Home'
   });
 };
+
+module.exports = {
+  'index': homeController
+}
