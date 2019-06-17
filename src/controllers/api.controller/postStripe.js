@@ -1,3 +1,5 @@
+const stripe = require('stripe')(process.env.STRIPE_SKEY);
+
 /**
  * POST /api/stripe
  * Make a payment.

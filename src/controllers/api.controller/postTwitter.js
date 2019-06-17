@@ -1,3 +1,4 @@
+const Twit = require('twit');
 
 /**
  * POST /api/twitter

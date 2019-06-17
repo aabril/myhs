@@ -1,3 +1,4 @@
+const clockwork = require('clockwork')({ key: process.env.CLOCKWORK_KEY });
 
 /**
  * POST /api/clockwork

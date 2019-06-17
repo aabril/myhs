@@ -1,3 +1,4 @@
+const { LastFmNode } = require('lastfm');
 
 /**
  * GET /api/lastfm

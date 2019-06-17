@@ -1,3 +1,5 @@
+const request = require('request');
+
 /**
  * GET /api/pinterest
  * Pinterest API example.

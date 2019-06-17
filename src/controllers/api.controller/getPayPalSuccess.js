@@ -1,3 +1,4 @@
+const paypal = require('paypal-rest-sdk');
 
 /**
  * GET /api/paypal/success

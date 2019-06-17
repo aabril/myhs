@@ -1,3 +1,5 @@
+const GitHub = require('@octokit/rest');
+
 /**
  * GET /api/github
  * GitHub API Example.

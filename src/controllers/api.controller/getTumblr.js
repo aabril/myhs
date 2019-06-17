@@ -1,3 +1,5 @@
+const tumblr = require('tumblr.js');
+
 /**
  * GET /api/tumblr
  * Tumblr API example.

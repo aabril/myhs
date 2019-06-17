@@ -1,3 +1,5 @@
+const paypal = require('paypal-rest-sdk');
+
 /**
  * GET /api/paypal
  * PayPal SDK example.

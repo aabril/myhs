@@ -1,3 +1,5 @@
+const Twit = require('twit');
+
 /**
  * GET /api/twitter
  * Twitter API example.

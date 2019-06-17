@@ -1,3 +1,5 @@
+const axios = require('axios');
+
 /**
  * GET /api/foursquare
  * Foursquare API example.

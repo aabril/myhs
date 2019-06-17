@@ -1,3 +1,5 @@
+const request = require('request');
+
 /**
  * POST /api/pinterest
  * Create a pin.

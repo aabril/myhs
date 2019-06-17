@@ -1,3 +1,5 @@
+const graph = require('fbgraph');
+
 /**
  * GET /api/facebook
  * Facebook API example.

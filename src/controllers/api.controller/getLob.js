@@ -1,3 +1,5 @@
+const lob = require('lob')(process.env.LOB_KEY);
+
 /**
  * GET /api/lob
  * Lob API example.

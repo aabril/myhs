@@ -1,3 +1,5 @@
+const twilio = require('twilio')(process.env.TWILIO_SID, process.env.TWILIO_TOKEN);
+
 /**
  * POST /api/twilio
  * Send a text message using Twilio.

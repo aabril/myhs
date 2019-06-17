@@ -1,3 +1,5 @@
+const { promisify } = require('util');
+const ig = require('instagram-node').instagram();
 
 /**
  * GET /api/instagram

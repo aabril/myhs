@@ -1,3 +1,5 @@
+const Linkedin = require('node-linkedin')(process.env.LINKEDIN_ID, process.env.LINKEDIN_SECRET, process.env.LINKEDIN_CALLBACK_URL);
+
 /**
  * GET /api/linkedin
  * LinkedIn API example.
