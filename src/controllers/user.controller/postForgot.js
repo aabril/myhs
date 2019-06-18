@@ -1,7 +1,7 @@
 const { promisify } = require('util');
 const crypto = require('crypto');
 const nodemailer = require('nodemailer');
-const User = require('../models/user.model');
+const User = require('../../models/user.model');
 const randomBytesAsync = promisify(crypto.randomBytes);
 
 /**
