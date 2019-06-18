@@ -9,7 +9,6 @@ const path = require('path');
 const passport = require('passport');
 const expressValidator = require('express-validator');
 const expressStatusMonitor = require('express-status-monitor');
-const sass = require('node-sass-middleware');
 
 function expressConfigService(app) {
   app.set('host', process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0');
@@ -18,10 +17,6 @@ function expressConfigService(app) {
   app.set('view engine', 'pug');
   app.use(expressStatusMonitor());
   app.use(compression());
-  app.use(sass({
-    src: path.join(__dirname, 'static'),
-    dest: path.join(__dirname, 'static')
-  }));
   app.use(logger('dev'));
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({ extended: true }));
