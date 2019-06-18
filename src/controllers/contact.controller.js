@@ -4,9 +4,8 @@ const nodemailer = require('nodemailer');
  * GET /contact
  * Contact form page.
  */
-exports.getContact = (req, res) => {
+function getContact (req, res) {
   const unknownUser = !(req.user);
-
   res.render('original/contact', {
     title: 'Contact',
     unknownUser,
@@ -17,7 +16,7 @@ exports.getContact = (req, res) => {
  * POST /contact
  * Send a contact form via Nodemailer.
  */
-exports.postContact = (req, res) => {
+function postContact (req, res) {
   let fromName;
   let fromEmail;
   if (!req.user) {
@@ -91,3 +90,8 @@ exports.postContact = (req, res) => {
       return res.redirect('/contact');
     });
 };
+
+module.exports = {
+  getContact, 
+  postContact
+}
