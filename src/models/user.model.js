@@ -2,12 +2,11 @@ const bcrypt = require('bcrypt');
 const crypto = require('crypto');
 const mongoose = require('mongoose');
 
-const userSchema = new mongoose.Schema({
+const schemaDefinition = {
   email: { type: String, unique: true },
   password: { type: String },
   passwordResetToken: { type: String },
   passwordResetExpires: { type: Date },
-
   snapchat: { type: String },
   facebook: { type: String },
   twitter: { type: String },
@@ -17,7 +16,6 @@ const userSchema = new mongoose.Schema({
   linkedin: { type: String },
   steam: { type: String },
   tokens: { type: Array },
-
   profile: {
     name: { type: String },
     gender: { type: String },
@@ -25,7 +23,8 @@ const userSchema = new mongoose.Schema({
     website: { type: String },
     picture: { type: String }
   }
-}, { timestamps: true });
+}
+const userSchema = new mongoose.Schema(schemaDefinition, { timestamps: true });
 
 /**
  * Password hash middleware.
