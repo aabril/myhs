@@ -1,0 +1,14 @@
+getLogin
+postLogin
+logout
+getSignup
+postSignup
+getAccount
+postUpdateProfile
+postUpdatePassword
+postDeleteAccount
+getOauthUnlink
+getReset
+postReset
+getForgot
+postForgot
