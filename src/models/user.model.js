@@ -4,26 +4,26 @@ const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
   email: { type: String, unique: true },
-  password: String,
-  passwordResetToken: String,
-  passwordResetExpires: Date,
+  password: { type: String },
+  passwordResetToken: { type: String },
+  passwordResetExpires: { type: Date },
 
-  snapchat: String,
-  facebook: String,
-  twitter: String,
-  google: String,
-  github: String,
-  instagram: String,
-  linkedin: String,
-  steam: String,
-  tokens: Array,
+  snapchat: { type: String },
+  facebook: { type: String },
+  twitter: { type: String },
+  google: { type: String },
+  github: { type: String },
+  instagram: { type: String },
+  linkedin: { type: String },
+  steam: { type: String },
+  tokens: { type: Array },
 
   profile: {
-    name: String,
-    gender: String,
-    location: String,
-    website: String,
-    picture: String
+    name: { type: String },
+    gender: { type: String },
+    location: { type: String },
+    website: { type: String },
+    picture: { type: String }
   }
 }, { timestamps: true });
 
