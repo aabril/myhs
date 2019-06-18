@@ -25,7 +25,7 @@ describe('GET /signup', () => {
   });
 });
 
-describe('GET /api', () => {
+describe('GET /example', () => {
   it('should return 200 OK', (done) => {
     request(app)
       .get('/api')
@@ -41,66 +41,66 @@ describe('GET /contact', () => {
   });
 });
 
-describe('GET /api/lastfm', () => {
+describe('GET /example/lastfm', () => {
   it('should return 200 OK', (done) => {
     request(app)
-      .get('/api/lastfm')
+      .get('/example/lastfm')
       .expect(200, done);
   });
 });
 
-describe('GET /api/twilio', () => {
+describe('GET /example/twilio', () => {
   it('should return 200 OK', (done) => {
     request(app)
-      .get('/api/twilio')
+      .get('/example/twilio')
       .expect(200, done);
   });
 });
 
-describe('GET /api/stripe', () => {
+describe('GET /example/stripe', () => {
   it('should return 200 OK', (done) => {
     request(app)
-      .get('/api/stripe')
+      .get('/example/stripe')
       .expect(200, done);
   });
 });
 
-describe('GET /api/scraping', () => {
+describe('GET /example/scraping', () => {
   it('should return 200 OK', (done) => {
     request(app)
-      .get('/api/scraping')
+      .get('/example/scraping')
       .expect(200, done);
   });
 });
 
-describe('GET /api/lob', () => {
+describe('GET /example/lob', () => {
   it('should return 200 OK', (done) => {
     request(app)
-      .get('/api/lob')
+      .get('/example/lob')
       .expect(200, done);
   });
 });
 
-describe('GET /api/aviary', () => {
+describe('GET /example/aviary', () => {
   it('should return 200 OK', (done) => {
     request(app)
-      .get('/api/aviary')
+      .get('/example/aviary')
       .expect(200, done);
   });
 });
 
-describe('GET /api/clockwork', () => {
+describe('GET /example/clockwork', () => {
   it('should return 200 OK', (done) => {
     request(app)
-      .get('/api/clockwork')
+      .get('/example/clockwork')
       .expect(200, done);
   });
 });
 
-describe('GET /api/upload', () => {
+describe('GET /example/upload', () => {
   it('should return 200 OK', (done) => {
     request(app)
-      .get('/api/upload')
+      .get('/example/upload')
       .expect(200, done);
   });
 });
