@@ -9,6 +9,7 @@ const path = require('path');
 const passport = require('passport');
 const expressValidator = require('express-validator');
 const expressStatusMonitor = require('express-status-monitor');
+const stylus = require('stylus');
 
 function expressConfigService(app) {
   app.set('host', process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0');
@@ -21,6 +22,15 @@ function expressConfigService(app) {
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({ extended: true }));
   app.use(expressValidator());
+
+  app.use(stylus.middleware({
+    src: path.join(__dirname, '../../static'),
+    dest: path.join(__dirname, '../../static'),
+    debug: true,
+    force: true,
+  }));
+
+
   app.use(session({
     resave: true,
     saveUninitialized: true,

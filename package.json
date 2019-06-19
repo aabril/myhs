@@ -1,18 +1,18 @@
 {
-  "name": "hackathon-starter",
-  "version": "5.1.2",
-  "description": "A boilerplate for Node.js web applications",
+  "name": "myhs",
+  "version": "1.0.1",
+  "description": "My own hackaton-starter. Fork of github.com/sahat/hackathon-starter",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sahat/hackathon-starter.git"
+    "url": "https://github.com/aabril/myhs.git"
   },
   "license": "MIT",
-  "author": "Sahat Yalkabov",
+  "author": "Albert Abril",
   "contributors": [
+    "Sahat Yalkabov (https://github.com/sahat)",
     "Yashar Fakhari (https://github.com/YasharF)"
   ],
   "scripts": {
-    "postinstall": "npm rebuild node-sass",
     "start": "node app.js",
     "dev": "nodemon -q --watch src --watch app.js app.js",
     "test": "nyc mocha --timeout=10000 --exit",
@@ -68,6 +68,7 @@
     "pug": "^2.0.3",
     "request": "^2.88.0",
     "stripe": "^7.1.0",
+    "stylus": "^0.54.5",
     "tumblr.js": "^2.0.2",
     "twilio": "^3.32.0",
     "twit": "^2.2.11",
