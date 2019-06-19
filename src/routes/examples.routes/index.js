@@ -1,9 +1,9 @@
-const apiController = require('../controllers/examples.controller');
-const passportService = require('../services/passport.service');
+const apiController = require('../../controllers/examples.controller');
+const passportService = require('../../services/passport.service');
 
 const multer = require('multer');
 const path = require('path');
-const upload = multer({ dest: path.join(__dirname, '../uploads') });
+const upload = multer({ dest: path.join(__dirname, '../../uploads') });
 
 function apiRoutes(app) {
   app.get('/examples', apiController.getApi);

@@ -1,7 +1,7 @@
-const homeController = require('../controllers/home.controller')
-const userController = require('../controllers/user.controller')
-const contactController = require('../controllers/contact.controller')
-const passportService = require('../services/passport.service')
+const homeController = require('../../controllers/home.controller')
+const userController = require('../../controllers/user.controller')
+const contactController = require('../../controllers/contact.controller')
+const passportService = require('../../services/passport.service')
 
 function primaryRoutes(app) {
   app.get('/', homeController.index);
